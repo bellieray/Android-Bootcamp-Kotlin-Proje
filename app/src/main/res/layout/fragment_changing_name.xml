@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ChangingNameFragment">
+
+    <Button
+        android:id="@+id/buttonNameKaydet"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="278dp"
+        android:text="Kaydet"
+        android:textAllCaps="true"
+        android:textColor="#dbab09"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#dbab09"
+        app:strokeWidth="2dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/nameToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffff"
+        android:gravity="start"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#0B0303" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="305dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="20dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:boxStrokeColor="#dbab09"
+        app:boxStrokeWidth="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameToolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adınızı Giriniz" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="202dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <RadioButton
+            android:id="@+id/radioErkek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Erkek"
+            app:buttonTint="#FF5722" />
+
+        <RadioButton
+            android:id="@+id/radioKadın"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kız"
+            app:buttonTint="#FF5722" />
+
+        <RadioButton
+            android:id="@+id/radioBosluk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belirtmek Istemiyorum"
+            app:buttonTint="#FF5722" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

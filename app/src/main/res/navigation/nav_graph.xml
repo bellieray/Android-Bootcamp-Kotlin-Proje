@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.harcamatakipuygulamasi.view.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_onBoardingFirst"
+            app:destination="@id/onBoardingFirst" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingSecond"
+        android:name="com.example.harcamatakipuygulamasi.view.OnBoardingSecond"
+        android:label="fragment_on_boarding_second"
+        tools:layout="@layout/fragment_on_boarding_second">
+        <action
+            android:id="@+id/action_onBoardingSecond_to_onBoardingThird"
+            app:destination="@id/onBoardingThird" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingThird"
+        android:name="com.example.harcamatakipuygulamasi.view.OnBoardingThird"
+        android:label="fragment_on_boarding_third"
+        tools:layout="@layout/fragment_on_boarding_third">
+        <action
+            android:id="@+id/action_onBoardingThird_to_anaEkranFragment"
+            app:destination="@id/anaEkranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFirst"
+        android:name="com.example.harcamatakipuygulamasi.view.OnBoardingFirst"
+        android:label="fragment_on_boarding_first"
+        tools:layout="@layout/fragment_on_boarding_first">
+        <action
+            android:id="@+id/action_onBoardingFirst_to_onBoardingSecond"
+            app:destination="@id/onBoardingSecond" />
+    </fragment>
+    <fragment
+        android:id="@+id/changingNameFragment"
+        android:name="com.example.harcamatakipuygulamasi.view.ChangingNameFragment"
+        android:label="fragment_changing_name"
+        tools:layout="@layout/fragment_changing_name" >
+        <action
+            android:id="@+id/action_changingNameFragment_to_anaEkranFragment"
+            app:destination="@id/anaEkranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anaEkranFragment"
+        android:name="com.example.harcamatakipuygulamasi.view.AnaEkranFragment"
+        android:label="fragment_ana_ekran"
+        tools:layout="@layout/fragment_ana_ekran" >
+        <action
+            android:id="@+id/action_anaEkranFragment_to_changingNameFragment"
+            app:destination="@id/changingNameFragment" />
+        <argument
+            android:name="isim"
+            app:argType="string"
+            android:defaultValue="   " />
+        <action
+            android:id="@+id/action_anaEkranFragment_to_harcamaEklemeFragment"
+            app:destination="@id/harcamaEklemeFragment" />
+        <action
+            android:id="@+id/action_anaEkranFragment_to_harcamaDetayiFragment"
+            app:destination="@id/harcamaDetayiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/harcamaEklemeFragment"
+        android:name="com.example.harcamatakipuygulamasi.view.HarcamaEklemeFragment"
+        android:label="fragment_harcama_ekleme"
+        tools:layout="@layout/fragment_harcama_ekleme" >
+        <action
+            android:id="@+id/action_harcamaEklemeFragment_to_anaEkranFragment"
+            app:destination="@id/anaEkranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/harcamaDetayiFragment"
+        android:name="com.example.harcamatakipuygulamasi.view.HarcamaDetayiFragment"
+        android:label="fragment_harcama_detayi"
+        tools:layout="@layout/fragment_harcama_detayi" >
+        <action
+            android:id="@+id/action_harcamaDetayiFragment_to_anaEkranFragment"
+            app:destination="@id/anaEkranFragment" />
+        <argument
+            android:name="HarcamaId"
+            app:argType="integer" />
+        <argument
+            android:name="kur"
+            app:argType="integer" />
+        <argument
+            android:name="kurIsareti"
+            app:argType="string" />
+    </fragment>
+</navigation>

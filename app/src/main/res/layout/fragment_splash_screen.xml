@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".view.SplashScreenFragment"
+    >
+
+    <TextView
+        android:id="@+id/textGiris"
+        android:layout_width="365dp"
+        android:layout_height="59dp"
+        android:fontFamily="@font/robotomediumitalic"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:shadowColor="@color/purple_500"
+        android:shadowDx="-10"
+        android:shadowDy="-10"
+        android:shadowRadius="1"
+        android:text="@string/harcama_takip_uygulamasi"
+        android:textColor="#FFFFFF"
+
+        android:textColorLink="#65FFFFFF"
+        android:textFontWeight="1000"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="219dp"
+        android:layout_height="190dp"
+        app:srcCompat="@drawable/ic_baseline_calculate_24"
+        app:layout_constraintBottom_toTopOf="@+id/textGiris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

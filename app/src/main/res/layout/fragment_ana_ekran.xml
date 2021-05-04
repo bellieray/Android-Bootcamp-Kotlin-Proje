@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".view.AnaEkranFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/button_focused"
+        app:fabCustomSize="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_24">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="390dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_goneMarginBottom="15dp">
+
+        <Button
+            android:id="@+id/buttonTLAnaEkran"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:text="TL"
+            android:textAllCaps="false"
+            android:textColor="#dbab09"
+            app:cornerRadius="20dp"
+            app:strokeColor="#dbab09"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/buttonDolarAnaEkran"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:layout_marginRight="14dp"
+            android:text="Dolar"
+            android:textAllCaps="false"
+            android:textColor="#dbab09"
+            app:cornerRadius="20dp"
+            app:strokeColor="#dbab09"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/buttonEuroAnaEkran"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:layout_marginRight="14dp"
+            android:text="Euro"
+            android:textAllCaps="false"
+            android:textColor="#dbab09"
+            app:cornerRadius="20dp"
+            app:strokeColor="#dbab09"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/buttonSterlinAnaEKran"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="84dp"
+            android:layout_height="47dp"
+            android:layout_marginRight="12dp"
+            android:text="Sterlin"
+            android:textAllCaps="false"
+            android:textColor="#dbab09"
+            app:cornerRadius="20dp"
+            app:strokeColor="#dbab09"
+            app:strokeWidth="2dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="389dp"
+        android:layout_height="500dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:listitem="@layout/recycler_row" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backcard"
+            >
+
+            <TextView
+                android:id="@+id/toplamHarcamaTextGiris"
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="150TL"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="157dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="Merhaba"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/isimTextGiris"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.583" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="153dp"
+                android:layout_height="63dp"
+                android:layout_marginEnd="28dp"
+                android:gravity="center"
+                android:text="Toplam Harcamanız"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/toplamHarcamaTextGiris"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.619" />
+
+            <TextView
+                android:id="@+id/isimTextGiris"
+                android:layout_width="169dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:maxWidth="300dp"
+                android:text="Adınız : "
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/toplamHarcamaTextGiris"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
