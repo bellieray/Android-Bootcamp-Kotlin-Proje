@@ -139,7 +139,8 @@
                 android:id="@+id/textView11"
                 android:layout_width="157dp"
                 android:layout_height="33dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="5dp"
                 android:gravity="center"
                 android:text="Merhaba"
                 android:textColor="#FFFFFF"
@@ -147,7 +148,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/isimTextGiris"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.974" />
+                app:layout_constraintVertical_bias="0.41" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -165,18 +166,17 @@
 
             <TextView
                 android:id="@+id/isimTextGiris"
-                android:layout_width="169dp"
-                android:layout_height="49dp"
-                android:layout_marginBottom="12dp"
-                android:gravity="center"
+                android:layout_width="160dp"
+                android:layout_height="84dp"
+                android:gravity="center_horizontal|center_vertical"
                 android:maxWidth="300dp"
                 android:text="Adınız : "
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/toplamHarcamaTextGiris"
-                app:layout_constraintHorizontal_bias="0.301"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
