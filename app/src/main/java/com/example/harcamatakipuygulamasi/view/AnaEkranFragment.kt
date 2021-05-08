@@ -15,6 +15,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import androidx.room.Room
 import com.example.harcamatakipuygulamasi.R
 import com.example.harcamatakipuygulamasi.adapter.RecyclerAdapter
@@ -82,6 +83,7 @@ class AnaEkranFragment : Fragment() {
 
 
     }
+
     //onCreateBitiş
 
     //internet bağlantısı sorgulama
@@ -158,6 +160,7 @@ class AnaEkranFragment : Fragment() {
         fabButton.setOnClickListener {
             val actionToHarcama = AnaEkranFragmentDirections.actionAnaEkranFragmentToHarcamaEklemeFragment()
             Navigation.findNavController(it).navigate(actionToHarcama)
+
         }
 
     }

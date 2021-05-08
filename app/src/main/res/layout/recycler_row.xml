@@ -3,13 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/textHarcamaFiyati"
-    android:gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="100dp">
+    android:layout_height="wrap_content"
+    android:gravity="center">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_width="395dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:foregroundGravity="center_vertical|center"
         android:outlineAmbientShadowColor="#000000"
         android:outlineSpotShadowColor="#000000"
         app:cardCornerRadius="15dp"
@@ -19,8 +22,10 @@
         tools:targetApi="p">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="380dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center_vertical|center">
 
             <TextView
                 android:id="@+id/textHarcamaTuruRecycler"
@@ -50,9 +55,9 @@
 
             <ImageView
                 android:id="@+id/imageRecycler"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="4dp"
+                android:layout_width="43dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="13dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginBottom="10dp"

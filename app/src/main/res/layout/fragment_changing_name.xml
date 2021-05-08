@@ -26,19 +26,34 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/nameToolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="334dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="#ffff"
         android:gravity="start"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
         app:titleTextColor="#0B0303" />
+
+    <Button
+        android:id="@+id/isimEklemeBackButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:shadowDx="5"
+        app:icon="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
