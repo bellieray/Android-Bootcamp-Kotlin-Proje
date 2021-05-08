@@ -120,7 +120,9 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/backcard">
+            android:background="@drawable/backcard"
+            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
 
             <TextView
                 android:id="@+id/toplamHarcamaTextGiris"
@@ -137,18 +139,16 @@
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="157dp"
-                android:layout_height="33dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginBottom="5dp"
-                android:gravity="center"
+                android:layout_width="155dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:gravity="bottom|center_horizontal"
                 android:text="Merhaba"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toTopOf="@+id/isimTextGiris"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.41" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -166,17 +166,18 @@
 
             <TextView
                 android:id="@+id/isimTextGiris"
-                android:layout_width="160dp"
-                android:layout_height="84dp"
-                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="162dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
                 android:maxWidth="300dp"
                 android:text="Adınız : "
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/toplamHarcamaTextGiris"
-                app:layout_constraintHorizontal_bias="0.528"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
